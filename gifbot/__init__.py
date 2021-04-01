@@ -16,7 +16,7 @@ class BotEnv():
         if ENV:
             TOKEN = os.environ.get('BOT_TOKEN')
             WEBHOOK = os.environ.get('WEBHOOK')
-            PORT = int(os.environ.get("PORT", "1234"))
+            PORT = int(os.environ.get("PORT", "8443"))
         else:
             from sample_config import config
             TOKEN = config.BOT_TOKEN
